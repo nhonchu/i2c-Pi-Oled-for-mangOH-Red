@@ -1,0 +1,25 @@
+version :1.0.0
+
+executables :
+{
+    piOled = ( SSD1306 )
+}
+
+processes :
+{
+    run:
+    {
+       (piOled)
+    }
+    
+    faultAction: restartApp
+}
+
+extern:
+{
+    piOled.SSD1306.piOled
+}
+
+sandboxed: false
+
+start: auto

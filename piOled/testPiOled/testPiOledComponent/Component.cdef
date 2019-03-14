@@ -1,0 +1,12 @@
+sources:
+{
+    testPiOled.c
+}
+
+requires:
+{
+    api:
+    {
+        piOled.api
+    }
+}

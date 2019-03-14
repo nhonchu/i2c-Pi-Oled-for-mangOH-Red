@@ -1,0 +1,19 @@
+sources:
+{
+    pioled.c
+    ssd1306_api.c
+    font_fixed.c
+}
+
+cflags:
+{
+    "-std=c99"
+}
+
+provides:
+{
+    api:
+    {
+        piOled.api
+    }
+}
